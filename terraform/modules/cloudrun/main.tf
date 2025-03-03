@@ -90,7 +90,7 @@ resource "google_cloud_run_v2_service" "dify_service" {
       }
       env {
         name  = "CONSOLE_API_URL"
-        value = ""
+        value = "${var.BASE_URL}${var.CONSOLE_API_URL}"
       }
       env {
         name  = "SERVICE_API_URL"
@@ -228,7 +228,7 @@ resource "google_cloud_run_v2_service" "dify_service" {
       }
       env {
         name  = "CONSOLE_API_URL"
-        value = ""
+        value = "${var.BASE_URL}${var.CONSOLE_API_URL}"
       }
       env {
         name  = "APP_API_URL"
@@ -286,7 +286,7 @@ resource "google_cloud_run_v2_service" "dify_worker" {
       }
       env {
         name  = "CONSOLE_API_URL"
-        value = ""
+        value = "${var.BASE_URL}${var.CONSOLE_API_URL}"
       }
       env {
         name  = "SERVICE_API_URL"
@@ -306,7 +306,7 @@ resource "google_cloud_run_v2_service" "dify_worker" {
       }
       env {
         name  = "FILES_URL"
-        value = ""
+        value = "${var.BASE_URL}${var.FILES_URL}"
       }
       env {
         name  = "MIGRATION_ENABLED"

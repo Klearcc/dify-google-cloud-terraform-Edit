@@ -89,3 +89,28 @@ variable "redis_port" {
 variable "indexing_max_segmentation_tokens_length" {
   type = string
 }
+
+
+
+variable "BASE_URL" {
+  type = string
+}
+variable "CONSOLE_WEB_URL" {
+  type = string
+}
+variable "CONSOLE_API_URL" {
+  type = string
+}
+variable "SERVICE_API_URL" {
+  type = string
+}
+variable "APP_API_URL" {
+  type = string
+}
+variable "APP_WEB_URL" {
+  type = string
+}
+variable "FILES_URL" {
+  type = string
+}
+

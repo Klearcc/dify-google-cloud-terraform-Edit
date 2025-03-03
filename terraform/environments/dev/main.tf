@@ -25,6 +25,13 @@ module "cloudrun" {
   redis_port                                 = module.redis.redis_port
   google_storage_service_account_json_base64 = module.storage.storage_admin_key_base64
   google_storage_bucket_name                 = module.storage.storage_bucket_name
+  BASE_URL              = var.BASE_URL
+  CONSOLE_API_URL       = var.CONSOLE_API_URL
+  CONSOLE_WEB_URL       = var.CONSOLE_WEB_URL
+  SERVICE_API_URL       = var.SERVICE_API_URL
+  APP_API_URL           = var.APP_API_URL
+  APP_WEB_URL           = var.APP_WEB_URL
+  FILES_URL             = var.FILES_URL
 
 }
 

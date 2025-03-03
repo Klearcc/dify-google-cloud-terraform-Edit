@@ -6,13 +6,14 @@ https://github.com/DeNA/dify-google-cloud-terraform
 因此本次修改了5个参数的获取逻辑
 ```
 CONSOLE_WEB_URL
+CONSOLE_API_URL
 SERVICE_API_URL
 APP_API_URL
 APP_WEB_URLs
 FILES_URL
 ```
 ## 使用
-1. 按照原作者的说明一步步操作。最后控制台会打印`dify_service_urllllllllllllll`的值。复制后添加到`terraform/environments/dev/terraform.tfvars`中的`BASE_URL`
+1. 使用本项目的源码进行部署。按照原作者的说明一步步操作。最后控制台会打印`dify_service_urllllllllllllll`的值。复制后添加到`terraform/environments/dev/terraform.tfvars`中的`BASE_URL`
 2. 重新部署
 
 # Terraform for Dify on Google Cloud
