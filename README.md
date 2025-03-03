@@ -1,3 +1,17 @@
+# 原作者
+https://github.com/DeNA/dify-google-cloud-terraform
+
+## 修改的内容
+问题：按照原作者的方式搭建后，登录后会发现一些地方的跳转url为127.0.0.1。
+因此本次修改了5个参数的获取逻辑
+```
+CONSOLE_WEB_URL
+SERVICE_API_URL
+APP_API_URL
+APP_WEB_URL
+FILES_URL
+```
+
 # Terraform for Dify on Google Cloud
 
 ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?logo=google-cloud&logoColor=white)
