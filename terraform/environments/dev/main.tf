@@ -25,6 +25,7 @@ module "cloudrun" {
   redis_port                                 = module.redis.redis_port
   google_storage_service_account_json_base64 = module.storage.storage_admin_key_base64
   google_storage_bucket_name                 = module.storage.storage_bucket_name
+
 }
 
 module "cloudsql" {

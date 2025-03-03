@@ -69,6 +69,10 @@ variable "vector_store" {
 variable "indexing_max_segmentation_tokens_length" {
   type = number
 }
+variable "BASE_URL" {
+  type = string
+}
+
 variable "CONSOLE_WEB_URL" {
   type = string
 }

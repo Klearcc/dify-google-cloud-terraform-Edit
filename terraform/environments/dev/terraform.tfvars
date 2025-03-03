@@ -1,6 +1,5 @@
 project_id                              = "your-project-id" # replace with your project id
 region                                  = "your-region"     # replace with your region
-BASE_URL                                = "your-dify-service-url" # replace with your dify-service url
 dify_version                            = "latest"
 dify_sandbox_version                    = "latest"
 nginx_repository_id                     = "dify-nginx-repo"
@@ -17,6 +16,7 @@ google_storage_bucket_name              = "dify"
 vector_store                            = "pgvector"
 indexing_max_segmentation_tokens_length = "1000"
 cloud_run_ingress                       = "INGRESS_TRAFFIC_ALL" # recommend to setup load balancer and use "INGRESS_TRAFFIC_INTERNAL_LOAD_BALANCER"
+BASE_URL                                = "your-dify-service-url" # replace with your dify-service url
 CONSOLE_WEB_URL                         = "/"
 SERVICE_API_URL                         = "/console/api"
 APP_API_URL                             = "/api"
