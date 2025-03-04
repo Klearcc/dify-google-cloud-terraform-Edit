@@ -86,19 +86,19 @@ resource "google_cloud_run_v2_service" "dify_service" {
       }
       env {
         name  = "CONSOLE_WEB_URL"
-        value = "${var.BASE_URL}${var.CONSOLE_WEB_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "CONSOLE_API_URL"
-        value = "${var.BASE_URL}${var.CONSOLE_API_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "SERVICE_API_URL"
-        value = "${var.BASE_URL}${var.SERVICE_API_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "APP_WEB_URL"
-        value = "${var.BASE_URL}${var.APP_WEB_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "CHECK_UPDATE_URL"
@@ -110,7 +110,23 @@ resource "google_cloud_run_v2_service" "dify_service" {
       }
       env {
         name  = "FILES_URL"
-        value = "${var.BASE_URL}${var.FILES_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
+      }
+      env {
+        name  = "NEXT_PUBLIC_API_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app/console/api"
+      }
+      env {
+        name  = "NEXT_PUBLIC_PUBLIC_API_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app/api"
+      }
+      env {
+        name  = "NEXT_PUBLIC_MARKETPLACE_API_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app/api/v1"
+      }
+      env {
+        name  = "NEXT_PUBLIC_MARKETPLACE_URL_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "MIGRATION_ENABLED"
@@ -228,11 +244,27 @@ resource "google_cloud_run_v2_service" "dify_service" {
       }
       env {
         name  = "CONSOLE_API_URL"
-        value = "${var.BASE_URL}${var.CONSOLE_API_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "APP_API_URL"
-        value = "${var.BASE_URL}${var.APP_API_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
+      }
+      env {
+        name  = "NEXT_PUBLIC_API_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app/console/api"
+      }
+      env {
+        name  = "NEXT_PUBLIC_PUBLIC_API_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app/api"
+      }
+      env {
+        name  = "NEXT_PUBLIC_MARKETPLACE_API_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app/api/v1"
+      }
+      env {
+        name  = "NEXT_PUBLIC_MARKETPLACE_URL_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       startup_probe {
         timeout_seconds   = 240
@@ -282,19 +314,19 @@ resource "google_cloud_run_v2_service" "dify_worker" {
       }
       env {
         name  = "CONSOLE_WEB_URL"
-        value = "${var.BASE_URL}${var.CONSOLE_WEB_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "CONSOLE_API_URL"
-        value = "${var.BASE_URL}${var.CONSOLE_API_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "SERVICE_API_URL"
-        value = "${var.BASE_URL}${var.SERVICE_API_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "APP_WEB_URL"
-        value = "${var.BASE_URL}${var.APP_WEB_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "CHECK_UPDATE_URL"
@@ -306,7 +338,23 @@ resource "google_cloud_run_v2_service" "dify_worker" {
       }
       env {
         name  = "FILES_URL"
-        value = "${var.BASE_URL}${var.FILES_URL}"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
+      }
+      env {
+        name  = "NEXT_PUBLIC_API_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app/console/api"
+      }
+      env {
+        name  = "NEXT_PUBLIC_PUBLIC_API_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app/api"
+      }
+      env {
+        name  = "NEXT_PUBLIC_MARKETPLACE_API_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app/api/v1"
+      }
+      env {
+        name  = "NEXT_PUBLIC_MARKETPLACE_URL_PREFIX"
+        value = "https://dify-service-3ldvli4peq-uc.a.run.app"
       }
       env {
         name  = "MIGRATION_ENABLED"

@@ -14,8 +14,20 @@ APP_WEB_URLs
 FILES_URL
 ```
 ## 使用
-1. 使用本项目的源码进行部署。按照原作者的说明一步步操作。最后控制台会打印`dify_service_urllllllllllllll`的值。复制后添加到`terraform/environments/dev/terraform.tfvars`中的`BASE_URL`
-2. 重新部署
+1. 使用本项目的源码进行部署。在gcp控制台先给权限,根据自己的项目设置PROJECT_ID。
+```
+gcloud services enable \
+    cloudresourcemanager.googleapis.com \
+    compute.googleapis.com \
+    servicenetworking.googleapis.com \
+    sqladmin.googleapis.com \
+    redis.googleapis.com \
+    vpcaccess.googleapis.com \
+    run.googleapis.com \
+--project PROJECT_ID 
+```
+2. 然后按照原作者的说明一步步操作。最后控制台会打印`dify_service_urllllllllllllll`的值。复制后添加到`terraform/environments/dev/terraform.tfvars`中的`BASE_URL`
+3. 重新部署
 
 # Terraform for Dify on Google Cloud
 
